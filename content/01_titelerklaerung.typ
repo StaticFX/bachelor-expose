@@ -1,33 +1,21 @@
-// ============================================================
-// content/01_titelerklaerung.typ
-//
-// NAK-ANFORDERUNG:
-// Den gewählten Titel direkt zu Beginn erläutern und in seine
-// Einzelteile sezieren. Dem Lesenden soll deutlich werden,
-// warum exakt diese Formulierung für das Forschungsvorhaben
-// gewählt wurde.
-// ============================================================
-
-= Erläuterung des Titels
-
-Der Titel der Arbeit lautet:
+= Titel und Forschungsfragen
 
 #block(
   inset: (left: 1.5em, top: 0.6em, bottom: 0.6em),
   stroke: (left: 2.5pt + rgb("#003A79")),
 )[
   #text(style: "italic", weight: "bold")[
-    KI-gestützte Softwareentwicklung ohne Cloud-Abhängigkeit. Eine Evaluation selbstgehosteter Coding-Agenten zum Schutz geistigen Eigentums bei der Zellerfeld R&D GmbH
-  ]
+    Lokal betriebener Coding-Agent für proprietäre Julia-Codebasen: Konzeption und Evaluation bei der Zellerfeld R&D GmbH
+  ]]
+
+Der Arbeit liegt die folgende Forschungsfrage zugrunde:
+
+#quote(block: true)[
+  Welche Entwicklungsaufgaben in den Julia-Codebasen der Zellerfeld R&D GmbH lassen sich mit einem lokal betriebenen Coding-Agenten mit einer Erfolgsquote von mindestens 80 % automatisieren?
 ]
 
-// HINWEIS: Gehe jeden Kernbegriff des Titels einzeln durch.
-// Erkläre, warum er so und nicht anders formuliert wurde.
-// Grenze ihn von verwandten Begriffen ab (z.B. "KI" vs. "ML",
-// "Analyse" vs. "Evaluation", "Konzept" vs. "Prototyp").
+Die Schwelle von 80 % wurde mit der Entwicklungsabteilung festgelegt. Zur Beantwortung der Forschungsfrage werden folgende Teilfragen untersucht:
 
-*KI-Gestütze Entwicklung ohne Cloud-Abhängigkeit:* Unternehmensweit wird Claude Code zur Softwareentwicklung eingesetzt. In der Produktentwicklungsabteilung ist dabei die Nutzung von Cloud-Diensten nicht möglich, da geistiges Eigentum geschützt werden muss.
-
-*Eine Evaluation selbstgehosteter Coding-Agenten:* In der Arbeit wird anhang Wissenschaftlicher Methoden (siehe unten) untersucht, ob selbstgehostete Coding-Agenten einen praktikablen Einsatz im Alltag finden können. 
-
-*Schutz geistigen Eigentums:* Siehe @relevanz
++ Welche Erfolgsquote erreicht der Agent bei Testgenerierung, Performance-Optimierung und Dokumentation?
++ Welche Erfolgsquote erreicht der Agent bei der eigenständigen Behebung von GitLab-Issues?
++ Welche Laufzeiten und Fehlerarten treten dabei auf?

@@ -16,7 +16,7 @@
 #show: apply-settings
 
 #cover(
-  title: "KI-gestützte Softwareentwicklung ohne Cloud-Abhängigkeit. Eine Evaluation selbstgehosteter Coding-Agenten zum Schutz geistigen Eigentums bei der Zellerfeld R&D GmbH",
+  title: "Lokal betriebener Coding-Agent für proprietäre Julia-Codebasen: Konzeption und Evaluation bei der Zellerfeld R&D GmbH",
   anlass: "Exposé zur Bachelorarbeit",
   author: "Devin Fritz",
   matrikelnummer: "12976",

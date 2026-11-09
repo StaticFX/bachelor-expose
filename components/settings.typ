@@ -5,7 +5,7 @@
 #let apply-settings(body) = {
   set document(
     title: "Exposé zur Bachelorarbeit",
-    author: "Timothy Spriegade",
+    author: "Devin Fritz",
   )
 
   set page(
@@ -18,7 +18,7 @@
         grid(
           columns: (1fr, auto),
           align(left)[
-            #text(size: 8pt, fill: luma(140))[Exposé zur Bachelorarbeit | Timothy Spriegade]
+            #text(size: 8pt, fill: luma(140))[Exposé zur Bachelorarbeit | Devin Fritz]
           ],
           align(right)[
             #text(size: 8pt, fill: luma(140))[Angewandte Informatik 2023]

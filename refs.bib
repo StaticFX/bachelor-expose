@@ -11,6 +11,9 @@
 	year = {2024},
 	note = {Version Number: 3},
 	keywords = {FOS: Computer and information sciences, Software Engineering (cs.SE)},
+	annote = {Einordnung für die BAKernaussage: Erste ganzheitliche Leitlinien für empirische Studien mit LLMs in der Softwaretechnik, mit Fokus auf Reproduzierbarkeit (u. a. Modellversion, Konfiguration, Nicht-Determinismus berichten).
+Verwendung: Bezugsrahmen und Methodik (Kap. 4.5) – Design und Reporting der Evaluation.
+Hinweis: Erschienen im WSESE-Workshop auf der ICSE 2025. Eine erweiterte Fassung existiert als Baltes et al., arXiv 2508.15503.},
 	annote = {Other
 4 pages, 2nd IEEE/ACM International Workshop on Methodological Issues with Empirical Studies in Software Engineering (WSESE 2025)},
 }
@@ -29,6 +32,8 @@
 	month = jan,
 	year = {2025},
 	pages = {42:1--42:28},
+	annote = {Einordnung für die BAKernaussage: ChatGPT liefert bei gleicher Eingabe stark unterschiedlichen Code; auch Temperatur 0 garantiert keinen Determinismus. Nur rund 21 \% der untersuchten Code-Generierungsstudien berücksichtigen das.
+Verwendung: Bezugsrahmen und Methodik (Kap. 4.5) – Begründung, warum jede Aufgabe mehrfach läuft und Streuung berichtet wird.},
 	file = {Full Text PDF:/Users/devin/Zotero/storage/IIN9FA8T/Ouyang et al. - 2025 - An Empirical Study of the Non-Determinism of ChatGPT in Code Generation.pdf:application/pdf},
 }
 
@@ -46,6 +51,8 @@
 	note = {arXiv:2310.06770 [cs.CL]},
 	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Software Engineering},
 	annote = {Comment: Data, code, and leaderboard are available at https://www.swebench.com ICLR 2024, https://openreview.net/forum?id=VTF8yNQM66},
+	annote = {Einordnung für die BAKernaussage: Benchmark aus realen GitHub-Issues. Ein Issue gilt als gelöst, wenn der Patch die issue-spezifischen Tests besteht und keine bestehenden Tests bricht.
+Verwendung: Bezugsrahmen – Definition einer gelösten Aufgabe für die GitLab-Issues (Kap. 4.4, 7.4). Außerdem Referenz für veröffentlichte Benchmarkwerte (Kap. 7.6).},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/R2XEUQJ5/Jimenez et al. - 2024 - SWE-bench Can Language Models Resolve Real-World GitHub Issues.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/897TXNSI/2310.html:text/html},
 }
 
@@ -62,6 +69,8 @@
 	author = {Yang, John and Jimenez, Carlos and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir},
 	year = {2024},
 	pages = {50528--50652},
+	annote = {Einordnung für die BAKernaussage: Führt das Konzept des Agent-Computer-Interface ein: Die Leistung eines Coding-Agenten hängt stark von den Werkzeugen und der Schnittstelle zur Entwicklungsumgebung ab, nicht nur vom Modell.
+Verwendung: Bezugsrahmen, Grundlagen (Kap. 2.2) und Architektur (Kap. 6.1) – Begründung, warum Modell und Harness getrennt betrachtet werden.},
 	file = {Submitted Version:/Users/devin/Zotero/storage/S9Y76PN9/Yang et al. - 2024 - SWE-agent Agent-Computer Interfaces Enable Automated Software Engineering.pdf:application/pdf},
 }
 
@@ -79,6 +88,8 @@
 	note = {arXiv:2407.16741 [cs.SE]},
 	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Software Engineering},
 	annote = {Comment: Accepted by ICLR 2025; Code: https://github.com/All-Hands-AI/OpenHands},
+	annote = {Einordnung für die BAKernaussage: Offene Plattform für Coding-Agenten, die mit beliebigen Modellen betrieben werden kann.
+Verwendung: Grundlagen (Kap. 2.2) und Hardware/Softwareumgebung (Kap. 5.2) – Beispiel für einen offenen Harness, der sich mit lokalen Modellen betreiben lässt; Option bei der Wahl des Harness.},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/J2QR4WCJ/Wang et al. - 2025 - OpenHands An Open Platform for AI Software Developers as Generalist Agents.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/CZ7J863S/2407.html:text/html},
 }
 
@@ -94,23 +105,32 @@
 	month = oct,
 	year = {2024},
 	note = {arXiv:2407.01489 [cs.SE]},
-	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Software Engineering, Computer Science - Machine Learning},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Software Engineering},
+	annote = {Einordnung für die BAKernaussage: Eine einfache Pipeline aus Lokalisieren, Reparieren und Prüfen kann auf SWE-bench mit komplexen Agenten-Loops mithalten.
+Verwendung: Grundlagen (Kap. 2.2) und Diskussion (Kap. 8) – Gegenposition: Mehr Agentik ist nicht automatisch besser. Relevant, falls einfache Abläufe bei Julia besser funktionieren.},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/T8UJSS4Z/Xia et al. - 2024 - Agentless Demystifying LLM-based Software Engineering Agents.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/WJ48JLJM/2407.html:text/html},
 }
 
-@misc{schafer_empirical_2023,
+@article{schafer_empirical_2024,
 	title = {An {Empirical} {Evaluation} of {Using} {Large} {Language} {Models} for {Automated} {Unit} {Test} {Generation}},
-	url = {http://arxiv.org/abs/2302.06527},
-	doi = {10.48550/arXiv.2302.06527},
+	volume = {50},
+	url = {https://doi.org/10.1109/TSE.2023.3334955},
+	doi = {10.1109/TSE.2023.3334955},
 	abstract = {Unit tests play a key role in ensuring the correctness of software. However, manually creating unit tests is a laborious task, motivating the need for automation. Large Language Models (LLMs) have recently been applied to this problem, utilizing additional training or few-shot learning on examples of existing tests. This paper presents a large-scale empirical evaluation on the effectiveness of LLMs for automated unit test generation without additional training or manual effort, providing the LLM with the signature and implementation of the function under test, along with usage examples extracted from documentation. We also attempt to repair failed generated tests by re-prompting the model with the failing test and error message. We implement our approach in TestPilot, a test generation tool for JavaScript that automatically generates unit tests for all API functions in an npm package. We evaluate TestPilot using OpenAI's gpt3.5-turbo LLM on 25 npm packages with a total of 1,684 API functions. The generated tests achieve a median statement coverage of 70.2\% and branch coverage of 52.8\%, significantly improving on Nessie, a recent feedback-directed JavaScript test generation technique, which achieves only 51.3\% statement coverage and 25.6\% branch coverage. We also find that 92.8\% of TestPilot's generated tests have no more than 50\% similarity with existing tests (as measured by normalized edit distance), with none of them being exact copies. Finally, we run TestPilot with two additional LLMs, OpenAI's older code-cushman-002 LLM and the open LLM StarCoder. Overall, we observed similar results with the former (68.2\% median statement coverage), and somewhat worse results with the latter (54.0\% median statement coverage), suggesting that the effectiveness of the approach is influenced by the size and training set of the LLM, but does not fundamentally depend on the specific model.},
+	number = {1},
 	urldate = {2026-10-14},
-	publisher = {arXiv},
+	journal = {IEEE Transactions on Software Engineering},
+	publisher = {IEEE},
 	author = {Schäfer, Max and Nadi, Sarah and Eghbali, Aryaz and Tip, Frank},
-	month = dec,
-	year = {2023},
-	note = {arXiv:2302.06527 [cs.SE]},
+	month = jan,
+	year = {2024},
+	note = {Archive ID: arXiv:2302.06527
+arXiv:2302.06527 [cs.SE]},
 	keywords = {Computer Science - Artificial Intelligence, Computer Science - Software Engineering},
-	file = {Preprint PDF:/Users/devin/Zotero/storage/V7QLL7V3/Schäfer et al. - 2023 - An Empirical Evaluation of Using Large Language Models for Automated Unit Test Generation.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/CMTS4BIV/2302.html:text/html},
+	annote = {Kernaussage: Empirische Evaluation von LLMs zur automatischen Unit-Test-Generierung (Werkzeug TestPilot, JavaScript); misst Coverage und Qualität der erzeugten Tests.
+Verwendung: Grundlagen (Kap. 2.5) und Evaluation (Kap. 7.1) – methodisches Vorbild für die Bewertung generierter Tests.
+Hinweis: Auf veröffentlichte Fassung umgestellt (IEEE TSE 50(1), 2024). Seitenzahlen noch nicht eingetragen – vor Abgabe über IEEE Xplore prüfen.},
+	file = {Preprint PDF:/Users/devin/Zotero/storage/V7QLL7V3/Schäfer et al. - 2024 - An Empirical Evaluation of Using Large Language Models for Automated Unit Test Generation.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/CMTS4BIV/2302.html:text/html},
 }
 
 @inproceedings{alshahwan_automated_2024,
@@ -128,76 +148,73 @@
 	month = jul,
 	year = {2024},
 	pages = {185--196},
+	annote = {Einordnung für die BAKernaussage: Industrieller Einsatz von LLM-basierter Testverbesserung (TestGen-LLM) bei Meta; generierte Tests werden nur übernommen, wenn sie bauen, bestehen und die Abdeckung erhöhen.
+Verwendung: Grundlagen (Kap. 2.5) und Evaluation (Kap. 7.1) – Beispiel für Filterkriterien generierter Tests im Unternehmenseinsatz.},
 	file = {Full Text PDF:/Users/devin/Zotero/storage/UH2DWHM2/Alshahwan et al. - 2024 - Automated Unit Test Improvement using Large Language Models at Meta.pdf:application/pdf},
 }
 
-@misc{foster_mutation-guided_2025,
+@inproceedings{foster_mutation-guided_2025,
+	address = {New York, NY, USA},
 	title = {Mutation-{Guided} {LLM}-based {Test} {Generation} at {Meta}},
-	url = {http://arxiv.org/abs/2501.12862},
-	doi = {10.48550/arXiv.2501.12862},
+	url = {https://doi.org/10.1145/3696630.3728544},
+	doi = {10.1145/3696630.3728544},
 	abstract = {This paper describes Meta's ACH system for mutation-guided LLM-based test generation. ACH generates relatively few mutants (aka simulated faults), compared to traditional mutation testing. Instead, it focuses on generating currently undetected faults that are specific to an issue of concern. From these currently uncaught faults, ACH generates tests that can catch them, thereby `killing' the mutants and consequently hardening the platform against regressions. We use privacy concerns to illustrate our approach, but ACH can harden code against \{{\textbackslash}em any\} type of regression. In total, ACH was applied to 10,795 Android Kotlin classes in 7 software platforms deployed by Meta, from which it generated 9,095 mutants and 571 privacy-hardening test cases. ACH also deploys an LLM-based equivalent mutant detection agent that achieves a precision of 0.79 and a recall of 0.47 (rising to 0.95 and 0.96 with simple pre-processing). ACH was used by Messenger and WhatsApp test-a-thons where engineers accepted 73\% of its tests, judging 36\% to privacy relevant. We conclude that ACH hardens code against specific concerns and that, even when its tests do not directly tackle the specific concern, engineers find them useful for their other benefits.},
 	urldate = {2026-10-14},
-	publisher = {arXiv},
+	booktitle = {Companion {Proceedings} of the 33rd {ACM} {International} {Conference} on the {Foundations} of {Software} {Engineering} ({FSE} {Companion} '25)},
+	publisher = {ACM},
 	author = {Foster, Christopher and Gulati, Abhishek and Harman, Mark and Harper, Inna and Mao, Ke and Ritchey, Jillian and Robert, Hervé and Sengupta, Shubho},
-	month = jan,
+	month = jul,
 	year = {2025},
-	note = {arXiv:2501.12862 [cs.SE]},
-	keywords = {Computer Science - Artificial Intelligence, Computer Science - Software Engineering, Computer Science - Machine Learning},
+	note = {Archive ID: arXiv:2501.12862
+arXiv:2501.12862 [cs.SE]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Software Engineering},
+	pages = {180--191},
 	annote = {Comment: Submitted to FSE 2025 Industry Track},
+	annote = {Kernaussage: Metas ACH-System erzeugt gezielt nicht entdeckte Fehler (Mutanten) und daraus Tests, die sie finden. Eingesetzt auf 10.795 Android-Kotlin-Klassen; 73 \% der Tests wurden von Ingenieuren akzeptiert. Argumentiert, dass Mutation Testing reiner Coverage als Adäquanzkriterium überlegen ist.
+Verwendung: Grundlagen (Kap. 2.5) und Evaluation (Kap. 7.1) – Begründung, warum Tests nach Fehlerfindung statt nach Coverage bewertet werden.
+Hinweis: Auf veröffentlichte Fassung umgestellt (FSE Companion '25, S. 180–191).},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/4PQKBNUT/Foster et al. - 2025 - Mutation-Guided LLM-based Test Generation at Meta.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/D4ZAPFQE/2501.html:text/html},
 }
 
-@article{jia_analysis_2011,
-	title = {An {Analysis} and {Survey} of the {Development} of {Mutation} {Testing}},
-	volume = {37},
-	issn = {1939-3520},
-	url = {https://ieeexplore.ieee.org/document/5487526/authors},
-	doi = {10.1109/TSE.2010.62},
-	abstract = {Mutation Testing is a fault-based software testing technique that has been widely studied for over three decades. The literature on Mutation Testing has contributed a set of approaches, tools, developments, and empirical results. This paper provides a comprehensive analysis and survey of Mutation Testing. The paper also presents the results of several development trend analyses. These analyses provide evidence that Mutation Testing techniques and tools are reaching a state of maturity and applicability, while the topic of Mutation Testing itself is the subject of increasing interest.},
-	number = {5},
-	urldate = {2026-10-14},
-	journal = {IEEE Transactions on Software Engineering},
-	author = {Jia, Yue and Harman, Mark},
-	month = sep,
-	year = {2011},
-	keywords = {Automata, Books, Computer languages, Educational institutions, Fault detection, Genetic mutations, History, Java, Mutation testing, Programming profession, Software testing, survey.},
-	pages = {649--678},
-	file = {Snapshot:/Users/devin/Zotero/storage/8MHETZFQ/authors.html:text/html},
-}
-
-@misc{shypula_learning_2024,
+@inproceedings{shypula_learning_2024,
 	title = {Learning {Performance}-{Improving} {Code} {Edits}},
-	url = {http://arxiv.org/abs/2302.07867},
-	doi = {10.48550/arXiv.2302.07867},
+	url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/ce65173b994cf7c925c71b482ee14a8d-Abstract-Conference.html},
 	abstract = {With the decline of Moore's law, optimizing program performance has become a major focus of software research. However, high-level optimizations such as API and algorithm changes remain elusive due to the difficulty of understanding the semantics of code. Simultaneously, pretrained large language models (LLMs) have demonstrated strong capabilities at solving a wide range of programming tasks. To that end, we introduce a framework for adapting LLMs to high-level program optimization. First, we curate a dataset of performance-improving edits made by human programmers of over 77,000 competitive C++ programming submission pairs, accompanied by extensive unit tests. A major challenge is the significant variability of measuring performance on commodity hardware, which can lead to spurious "improvements." To isolate and reliably evaluate the impact of program optimizations, we design an environment based on the gem5 full system simulator, the de facto simulator used in academia and industry. Next, we propose a broad range of adaptation strategies for code optimization; for prompting, these include retrieval-based few-shot prompting and chain-of-thought, and for finetuning, these include performance-conditioned generation and synthetic data augmentation based on self-play. A combination of these techniques achieves a mean speedup of 6.86 with eight generations, higher than average optimizations from individual programmers (3.66). Using our model's fastest generations, we set a new upper limit on the fastest speedup possible for our dataset at 9.64 compared to using the fastest human submissions available (9.56).},
 	urldate = {2026-10-14},
-	publisher = {arXiv},
+	booktitle = {The {Twelfth} {International} {Conference} on {Learning} {Representations} ({ICLR} 2024)},
 	author = {Shypula, Alexander and Madaan, Aman and Zeng, Yimeng and Alon, Uri and Gardner, Jacob and Hashemi, Milad and Neubig, Graham and Ranganathan, Parthasarathy and Bastani, Osbert and Yazdanbakhsh, Amir},
-	month = apr,
 	year = {2024},
-	note = {arXiv:2302.07867 [cs.SE]},
-	keywords = {Computer Science - Artificial Intelligence, Computer Science - Software Engineering, Computer Science - Machine Learning, Computer Science - Performance},
+	note = {Archive ID: arXiv:2302.07867
+arXiv:2302.07867 [cs.SE]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Performance, Computer Science - Software Engineering},
 	annote = {Comment: Published as a conference paper at ICLR 2024 (Spotlight). Project website: https://pie4perf.com/},
+	annote = {Kernaussage: Datensatz und Methode für LLM-basierte Performance-Optimierung von Code; Beschleunigung wird nur bei erhaltener Korrektheit gewertet.
+Verwendung: Grundlagen (Kap. 2.5) und Evaluation (Kap. 7.2) – Vorbild für die Bewertung der Aufgabenklasse Performance: Benchmark-Delta bei grüner Testsuite.
+Hinweis: Auf veröffentlichte Fassung umgestellt (ICLR 2024). ICLR vergibt keine DOI; die arXiv-DOI wurde entfernt.},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/RTUUVJHX/Shypula et al. - 2024 - Learning Performance-Improving Code Edits.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/D2M5BH7Z/2302.html:text/html},
 }
 
-@article{mundhra_evaluating_2025,
+@inproceedings{mundhra_evaluating_2025,
 	address = {Piscataway},
-	title = {Evaluating {Large} {Language} {Models} for {Functional} and {Maintainable} {Code} in {Industrial} {Settings}: 2025 40th {IEEE}/{ACM} {International} {Conference} on {Automated} {Software} {Engineering} ({ASE})},
+	title = {Evaluating {Large} {Language} {Models} for {Functional} and {Maintainable} {Code} in {Industrial} {Settings}: {A} {Case} {Study} at {ASML}},
+	isbn = {979-8-3503-5734-9},
 	issn = {979-8-3503-5734-9},
 	shorttitle = {Evaluating {Large} {Language} {Models} for {Functional} and {Maintainable} {Code} in {Industrial} {Settings}},
 	url = {https://www.scopus.com/pages/publications/105034672579},
 	doi = {10.1109/ASE63991.2025.00287},
 	abstract = {Large language models have shown impressive performance in various domains, including code generation across diverse open-source domains. However, their applicability in proprietary industrial settings, where domain-specific constraints and code interdependencies are prevalent, remains largely unexplored. We present a case study conducted in collaboration with the leveling department at ASML to investigate the performance of LLMs in generating functional, maintainable code within a closed, highly specialized software environment.We developed an evaluation framework tailored to ASML’s proprietary codebase and introduced a new benchmark. Additionally, we proposed a new evaluation metric, build@k, to assess whether LLM-generated code successfully compiles and integrates within real industrial repositories. We investigate various prompting techniques, compare the performance of generic and code-specific LLMs, and examine the impact of model size on code generation capabilities, using both match-based and execution-based metrics. The findings reveal that prompting techniques and model size have a significant impact on output quality, with few-shot and chain-of-thought prompting yielding the highest build success rates. The difference in performance between the code-specific LLMs and generic LLMs was less pronounced and varied substantially across different model families.},
 	urldate = {2026-10-18},
-	journal = {Proceedings of the 2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+	booktitle = {Proceedings of the 2025 40th {IEEE}/{ACM} {International} {Conference} on {Automated} {Software} {Engineering} ({ASE})},
 	publisher = {IEEE},
 	author = {Mundhra, Yash and Valk, Max and Izadi, M.},
 	editor = {Gurrola, J.},
 	year = {2025},
 	keywords = {Chain-of-Thought, Code Generation, Evaluation, Few-shot, Large Language Models, LLM, Prompting Techniques},
 	pages = {3475--3485},
-	file = {Submitted Version:/Users/devin/Zotero/storage/5ENZLELI/Mundhra et al. - 2025 - Evaluating Large Language Models for Functional and Maintainable Code in Industrial Settings 2025 4.pdf:application/pdf},
+	annote = {Kernaussage: Fallstudie bei ASML zur Code-Generierung in einer proprietären C++-Codebasis per Prompting. Führt die Metrik build@k ein. Größere Modelle helfen, der Zugewinn flacht ab etwa 14B ab.
+Verwendung: Forschungsstand (Kap. 3) – proprietärer Industriecode, aber keine agentischen Abläufe.
+Hinweis: Peer-reviewt, ASE 2025 (Industry Showcase), S. 3475–3485.},
+	file = {Submitted Version:/Users/devin/Zotero/storage/5ENZLELI/Mundhra et al. - 2025 - Evaluating Large Language Models for Functional and Maintainable Code in Industrial Settings A Case.pdf:application/pdf},
 }
 
 @article{matotek_evaluating_2025,
@@ -213,6 +230,9 @@
 	month = oct,
 	year = {2025},
 	pages = {138--152},
+	annote = {Einordnung für die BAKernaussage: Lokal über Ollama betriebene Modelle mit 6,7 bis 9 Mrd. Parametern auf 3.589 Kattis-Wettbewerbsaufgaben. Die besten erreichen etwa die Hälfte der Akzeptanzrate von Gemini 1.5 und GPT-4.
+Verwendung: Forschungsstand (Kap. 3) – lokale Modelle auf begrenzter Hardware, aber Wettbewerbsaufgaben statt realem Code und ohne Agenten.
+Hinweis: Kleine, ältere Modelle – nicht als Beleg für die Leistung aktueller lokaler Modelle verwenden.},
 	file = {Full Text PDF:/Users/devin/Zotero/storage/2Z95U9C2/Matotek et al. - 2025 - Evaluating the Limitations of Local LLMs in Solving Complex Programming Challenges.pdf:application/pdf},
 }
 
@@ -232,6 +252,9 @@
 	month = oct,
 	year = {2026},
 	pages = {4443--4455},
+	annote = {Einordnung für die BAKernaussage: Offener Reparatur-Agent mit lokal gehostetem Qwen3.5-27B ohne Feintuning. Löst 374/500 Aufgaben aus SWE-bench Verified und 41/128 aus Multi-SWE-bench Java. Betrieb auf zwei GPUs mit Tensor-Parallelität.
+Verwendung: Forschungsstand (Kap. 3) – wichtigste Vergleichsstudie. Zeigt, dass lokale 27B-Modelle auf Benchmarks konkurrenzfähig sind. Die Autoren klammern den Einsatz auf proprietären Repositories ausdrücklich aus – bestätigt die Forschungslücke.
+Hinweis: Python und Java, nicht nur Python. Peer-reviewed (ASE '26).},
 	file = {Full Text PDF:/Users/devin/Zotero/storage/NDBQNR6N/Bahrami et al. - 2026 - Kozuchi Agent A Language-Agnostic Open-Weight Agent for Software Repair.pdf:application/pdf},
 }
 
@@ -249,6 +272,8 @@
 	month = aug,
 	year = {2024},
 	pages = {14116--14137},
+	annote = {Kernaussage: Gängige Code-Benchmarks wie HumanEval und MBPP überschneiden sich erheblich mit offenen Trainingskorpora. Modelle schneiden auf Aufgaben, deren Lösungen sie im Training gesehen haben, deutlich besser ab.
+Verwendung: Forschungsstand (Kap. 3) – Argument, warum Benchmarkwerte die Praxisleistung überschätzen können und proprietärer Code ein aussagekräftigerer Test ist. Stützt Teilfrage 4.},
 	file = {Full Text PDF:/Users/devin/Zotero/storage/7ZBXU5IJ/Riddell et al. - 2024 - Quantifying Contamination in Evaluating Code Generation Capabilities of Language Models.pdf:application/pdf},
 }
 
@@ -264,6 +289,9 @@
 	year = {2026},
 	note = {arXiv:2503.07103 [cs.SE]},
 	keywords = {Computer Science - Software Engineering},
+	annote = {Einordnung für die BAKernaussage: Quantisierung von Code-Modellen bis 34B: 4 Bit reduzieren den Speicherbedarf um etwa 70 \% ohne signifikanten Leistungsverlust; bei 3 und 2 Bit sinkt die Leistung statistisch signifikant.
+Verwendung: Bezugsrahmen, Grundlagen (Kap. 2.3) und Modellauswahl (Kap. 5.3) – Begründung der gewählten Quantisierungsstufe; Quantisierung als Störgröße in den Limitationen.
+Hinweis: Gemessen an isolierter Code-Generierung, nicht an agentischen Abläufen.},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/S2828IB7/Giagnorio et al. - 2026 - Evaluating the Impact of Post-Training Quantization on Large Language Models for Code Generation.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/BN7TQ77L/2503.html:text/html},
 }
 
@@ -280,5 +308,108 @@
 	year = {2026},
 	note = {arXiv:2607.14181 [cs.SE]},
 	keywords = {Computer Science - Machine Learning, Computer Science - Programming Languages, Computer Science - Software Engineering},
+	annote = {Einordnung für die BAKernaussage: Vergleich von sechs Quantisierungsverfahren (GPTQ, AWQ, QuIP\#, AQLM, BitsAndBytes, GGUF) an Qwen2.5-Coder und CodeLlama. Bewertet neben Korrektheit auch Wartbarkeit, Zuverlässigkeit und Sicherheit; die Verfahren unterscheiden sich deutlich.
+Verwendung: Forschungsstand (Kap. 3) und Grundlagen (Kap. 2.3) – ausdrücklich motiviert durch lokale Inferenz auf ressourcenbeschränkter Hardware; zeigt zugleich, dass Agenten nicht untersucht wurden.
+Hinweis: Preprint – vor Abgabe prüfen, ob eine peer-reviewte Fassung erschienen ist.},
 	file = {Preprint PDF:/Users/devin/Zotero/storage/SRBQN43N/Afrin et al. - 2026 - Quantize with Confidence An Empirical Study of Quantization for Code Generation.pdf:application/pdf;Snapshot:/Users/devin/Zotero/storage/QBACQU56/2607.html:text/html},
+}
+
+@article{hevner_design_2004,
+	title = {Design {Science} in {Information} {Systems} {Research}},
+	volume = {28},
+	issn = {0276-7783},
+	url = {https://doi.org/10.2307/25148625},
+	doi = {10.2307/25148625},
+	abstract = {Two paradigms characterize much of the research in the Information Systems discipline: behavioral science and design science. The behavioral-science paradigm seeks to develop and verify theories that explain or predict human or organizational behavior. The design-science paradigm seeks to extend the boundaries of human and organizational capabilities by creating new and innovative artifacts. Both paradigms are foundational to the IS discipline, positioned as it is at the confluence of people, organizations, and technology. Our objective is to describe the performance of design-science research in Information Systems via a concise conceptual framework and clear guidelines for understanding, executing, and evaluating the research. In the design-science paradigm, knowledge and understanding of a problem domain and its solution are achieved in the building and application of the designed artifact. Three recent exemplars in the research literature are used to demonstrate the application of these guidelines. We conclude with an analysis of the challenges of performing high-quality design-science research in the context of the broader IS community.},
+	number = {1},
+	urldate = {2026-10-19},
+	journal = {Management Information Systems Quarterly},
+	author = {Hevner, Alan R. and March, Salvatore T. and Park, Jinsoo and Ram, Sudha},
+	month = mar,
+	year = {2004},
+	pages = {75--106},
+	annote = {Kernaussage: Grundlagenwerk der Design Science Research in der Wirtschaftsinformatik. Forschung entsteht durch Bau und Evaluation eines Artefakts, das ein reales Problem löst.
+Verwendung: Methodik (Kap. 4.1) – übergeordneter Forschungsansatz und Begründung, warum ein Artefakt gebaut wird.},
+	file = {Snapshot:/Users/devin/Zotero/storage/YTKU9XNC/25148625.html:text/html},
+}
+
+@article{peffers_design_2007,
+	title = {A {Design} {Science} {Research} {Methodology} for {Information} {Systems} {Research}},
+	volume = {24},
+	issn = {0742-1222},
+	url = {https://doi.org/10.2753/MIS0742-1222240302},
+	doi = {10.2753/MIS0742-1222240302},
+	abstract = {The paper motivates, presents, demonstrates in use, and evaluates a methodology for conducting design science (DS) research in information systems (IS). DS is of importance in a discipline oriented to the creation of successful artifacts. Several researchers have pioneered DS research in IS, yet over the past 15 years, little DS research has been done within the discipline. The lack of a methodology to serve as a commonly accepted framework for DS research and of a template for its presentation may have contributed to its slow adoption. The design science research methodology (DSRM) presented here incorporates principles, practices, and procedures required to carry out such research and meets three objectives: it is consistent with prior literature, it provides a nominal process model for doing DS research, and it provides a mental model for presenting and evaluating DS research in IS. The DS process includes six steps: problem identification and motivation, definition of the objectives for a solution, design and development, demonstration, evaluation, and communication. We demonstrate and evaluate the methodology by presenting four case studies in terms of the DSRM, including cases that present the design of a database to support health assessment methods, a software reuse measure, an Internet video telephony application, and an IS planning method. The designed methodology effectively satisfies the three objectives and has the potential to help aid the acceptance of DS research in the IS discipline.},
+	number = {3},
+	urldate = {2026-10-19},
+	journal = {Journal of Management Information Systems},
+	publisher = {Routledge},
+	author = {Peffers, Ken and Tuunanen, Tuure and Rothenberger, Marcus A. and Chatterjee, Samir},
+	month = dec,
+	year = {2007},
+	keywords = {case study, design science, design science research, design theory, mental model, methodology, process model},
+	pages = {45--77},
+	annote = {Einordnung für die BAKernaussage: Prozessmodell für Design Science Research mit sechs Phasen: Problemidentifikation, Zieldefinition, Design und Entwicklung, Demonstration, Evaluation, Kommunikation. Beschreibt verschiedene Einstiegspunkte.
+Verwendung: Methodik (Kap. 4.1) – gewähltes Prozessmodell. Die Gliederung folgt den Phasen; Einstieg ist problemzentriert, da die Fragestellung aus dem Unternehmen kommt. Anforderungserhebung = Phase Zieldefinition, Erstdurchlauf = Demonstration.},
+}
+
+@article{jia_analysis_2011,
+	title = {An {Analysis} and {Survey} of the {Development} of {Mutation} {Testing}},
+	volume = {37},
+	issn = {1939-3520},
+	url = {https://ieeexplore.ieee.org/abstract/document/5487526},
+	doi = {10.1109/TSE.2010.62},
+	abstract = {Mutation Testing is a fault-based software testing technique that has been widely studied for over three decades. The literature on Mutation Testing has contributed a set of approaches, tools, developments, and empirical results. This paper provides a comprehensive analysis and survey of Mutation Testing. The paper also presents the results of several development trend analyses. These analyses provide evidence that Mutation Testing techniques and tools are reaching a state of maturity and applicability, while the topic of Mutation Testing itself is the subject of increasing interest.},
+	number = {5},
+	urldate = {2026-10-19},
+	journal = {IEEE Transactions on Software Engineering},
+	author = {Jia, Yue and Harman, Mark},
+	month = sep,
+	year = {2011},
+	keywords = {Automata, Books, Computer languages, Educational institutions, Fault detection, Genetic mutations, History, Java, Mutation testing, Programming profession, Software testing, survey.},
+	pages = {649--678},
+	annote = {Einordnung für die BAKernaussage: Umfassender Überblick über Theorie und Entwicklung des Mutation Testing: Mutanten, Mutation Score, äquivalente Mutanten.
+Verwendung: Grundlagen (Kap. 2.5) – Definition des Prinzips. Für Julia ist Werkzeugunterstützung schwach (Gremlins.jl, v0.1); geplant ist daher das Wiedereinspielen historischer Fehler, das demselben Prinzip folgt.},
+	file = {Full Text PDF:/Users/devin/Zotero/storage/7D8DZWDA/Jia and Harman - 2011 - An Analysis and Survey of the Development of Mutation Testing.pdf:application/pdf},
+}
+
+@inproceedings{nader_llm_2026,
+	address = {Cham},
+	title = {{LLM} \& {HPC}: {Benchmarking} {DeepSeek}’s {Performance} in {High}-{Performance} {Computing} {Tasks}},
+	isbn = {978-3-032-07612-0},
+	shorttitle = {{LLM} \& {HPC}},
+	doi = {10.1007/978-3-032-07612-0_48},
+	abstract = {Large Language Models (LLMs), such as GPT-4 and DeepSeek, have been applied to a wide range of domains in software engineering. However, their potential in the context of High-Performance Computing (HPC) much remains to be explored. This paper evaluates how well DeepSeek, a recent LLM, performs in generating a set of HPC benchmark codes: a conjugate gradient solver, the parallel heat equation, parallel matrix multiplication, DGEMM, and the STREAM triad operation. We analyze DeepSeek’s code generation capabilities for traditional HPC languages like C++, Fortran, Julia and Python. The evaluation includes testing for code correctness, performance, and scaling across different configurations and matrix sizes. We also provide a detailed comparison between DeepSeek and another widely used tool: GPT-4. Our results demonstrate that while DeepSeek generates functional code for HPC tasks, it lags behind GPT-4, in terms of scalability and execution efficiency of the generated code.},
+	language = {en},
+	booktitle = {High {Performance} {Computing}},
+	publisher = {Springer Nature Switzerland},
+	author = {Nader, Noujoud and Diehl, Patrick and Brandt, Steve and Kaiser, Hartmut},
+	editor = {Neuwirth, Sarah and Paul, Arnab Kumar and Weinzierl, Tobias and Carson, Erin Claire},
+	year = {2026},
+	keywords = {Code Performance, DeepSeek, GPT-4, HPC, LLM, Programming language processing},
+	pages = {626--638},
+	annote = {Einordnung für die BAKernaussage: DeepSeek und GPT-4 generieren HPC-Benchmarkcodes (u. a. CG-Solver, Matrixmultiplikation, STREAM) in C++, Fortran, Julia und Python. DeepSeek erzeugt funktionsfähigen Code, liegt bei Skalierung und Ausführungseffizienz aber hinter GPT-4.
+Verwendung: Forschungsstand (Kap. 3) – eine der wenigen Arbeiten mit Julia; betrachtet Code-Generierung und Performance, aber keine lokalen Modelle und keine Agenten. Auch für die Aufgabenklasse Performance (Kap. 7.2) relevant.},
+	file = {Submitted Version:/Users/devin/Zotero/storage/DL6GY8Y8/Nader et al. - 2026 - LLM & HPC Benchmarking DeepSeek’s Performance in High-Performance Computing Tasks.pdf:application/pdf},
+}
+
+@article{cassano_multipl-e_2023,
+	title = {{MultiPL}-{E}: {A} {Scalable} and {Polyglot} {Approach} to {Benchmarking} {Neural} {Code} {Generation}},
+	volume = {49},
+	issn = {1939-3520},
+	shorttitle = {{MultiPL}-{E}},
+	url = {https://ieeexplore.ieee.org/document/10103177},
+	doi = {10.1109/TSE.2023.3267446},
+	abstract = {Large language models have demonstrated the ability to generate both natural language and programming language text. Although contemporary code generation models are trained on corpora with several programming languages, they are tested using benchmarks that are typically monolingual. The most widely used code generation benchmarks only target Python, so there is little quantitative evidence of how code generation models perform on other programming languages. We propose MultiPL-E, a system for translating unit test-driven code generation benchmarks to new languages. We create the first massively multilingual code generation benchmark by using MultiPL-E to translate two popular Python code generation benchmarks to 18 additional programming languages. We use MultiPL-E to extend the HumanEval benchmark (Chen et al., 2021) and MBPP benchmark (Austin et al., 2021) to 18 languages that encompass a range of programming paradigms and popularity. Using these new parallel benchmarks, we evaluate the multi-language performance of three state-of-the-art code generation models: Codex (Chen et al., 2021), CodeGen (Nijkamp et al., 2022) and InCoder (Fried et al., 2022). We find that Codex matches or even exceeds its performance on Python for several other languages. The range of programming languages represented in MultiPL-E allow us to explore the impact of language frequency and language features on model performance. Finally, the MultiPL-E approach of compiling code generation benchmarks to new programming languages is both scalable and extensible, making it straightforward to evaluate new models, benchmarks, and languages.},
+	number = {7},
+	urldate = {2026-10-24},
+	journal = {IEEE Transactions on Software Engineering},
+	author = {Cassano, Federico and Gouwar, John and Nguyen, Daniel and Nguyen, Sydney and Phipps-Costin, Luna and Pinckney, Donald and Yee, Ming-Ho and Zi, Yangtian and Anderson, Carolyn Jane and Feldman, Molly Q and Guha, Arjun and Greenberg, Michael and Jangda, Abhinav},
+	month = jul,
+	year = {2023},
+	keywords = {B.2.3 reliability, testing, and fault-tolerance, Benchmark testing, Codes, I.5.1.D neural nets, Natural languages, Programming, Python, Syntactics, Task analysis},
+	pages = {3675--3691},
+	annote = {Einordnung für die BAKernaussage: Übersetzt gängige Python-Benchmarks in 18 weitere Sprachen, darunter Julia. Die Qualität generierten Codes hängt stark von der Sprache und ihrer Verbreitung ab.
+Verwendung: Bezugsrahmen und Grundlagen (Kap. 2.4) – Beleg dafür, dass Julia als Low-Resource-Sprache schlechter abschneidet. Außerdem Quelle für Julia-Werte bei der Modellauswahl (Kap. 5.3).},
+	file = {Full Text PDF:/Users/devin/Zotero/storage/C3KL9T9Y/Cassano et al. - 2023 - MultiPL-E A Scalable and Polyglot Approach to Benchmarking Neural Code Generation.pdf:application/pdf},
 }

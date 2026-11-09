@@ -1,16 +1,5 @@
 = Bezugsrahmen
 
-#figure(
-  table(
-    columns: 2,
-    align: left,
-    [*Konzept*], [*Verwendung in der Arbeit*],
-    [Agent-Computer-Interface], [Trennung von Modell und Harness],
-    [Quantisierung], [Konfiguration der lokalen Inferenz],
-    [Issue-Behebung], [Erfolgskriterium für GitLab-Issues],
-    [Mutation Testing], [Bewertung generierter Tests],
-    [Nicht-Determinismus], [Begründung für Mehrfachläufe],
-    [Evaluationsleitlinien], [Design und Reporting der Evaluation],
-  ),
-  caption: [Zentrale Konzepte und ihre Verwendung],
-)
+Die Arbeit folgt dem Konzept des Agent-Computer-Interface nach #cite(<yang_swe-agent_2024>, form: "prose"). Danach hängt die Leistung eines Coding-Agenten nicht nur vom Sprachmodell ab, sondern auch von den Werkzeugen und der Schnittstelle, über die es mit der Entwicklungsumgebung interagiert. Modell und Harness werden daher getrennt betrachtet. Für den lokalen Betrieb wird das Modell quantisiert, wodurch sich der Speicherbedarf auf Kosten möglicher Qualitätsverluste reduziert @giagnorio_evaluating_2026. Julia gilt als Low-Resource-Programmiersprache, die in den Trainingsdaten von Sprachmodellen unterrepräsentiert ist @cassano_multipl-e_2023.
+
+Ob eine Aufgabe gelöst ist, wird in Anlehnung an #cite(<jimenez_swe-bench_2024>, form: "prose") anhand ausführbarer Tests entschieden. Da Sprachmodelle auch bei gleicher Konfiguration unterschiedliche Ergebnisse liefern, wird jede Aufgabe mehrfach durchgeführt @ouyang_empirical_2025. Design und Reporting der Evaluation orientieren sich an den Leitlinien von #cite(<wagner_towards_2024>, form: "prose").
